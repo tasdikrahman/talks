@@ -2,7 +2,7 @@
 
 a = 10
 
-class foo(object):
+class Foo(object):
     pass
 
 print("inside 'explicitimports/foo.py' with a variable in it")

@@ -1,6 +1,6 @@
 # basicpackage/bar.py
 
-class bar(object):
+class Bar(object):
     pass
 
 print("inside 'basicpackage/bar.py'")

@@ -1,6 +1,6 @@
 # absolutemports/bar.py
 
-class bar(object):
+class Bar(object):
     pass
 
 print("inside 'absoluteimports/bar.py'")

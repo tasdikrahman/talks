@@ -1,6 +1,6 @@
 # explicitimports/bar.py
 
-class bar(object):
+class Bar(object):
     pass
 
 print("inside 'explicitimports/bar.py'")

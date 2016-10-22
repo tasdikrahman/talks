@@ -281,4 +281,60 @@ from ..plino import bar
 # What should you put into it?
 
 - Most of the time, it's empty!
-- 
+- Stiching together submodules:
+
+```python
+# minions/foo.py
+class Foo(object):
+	pass
+
+# minions/bar.py
+class Bar(object):
+	pass
+    
+# minions/__init__.py
+from .foo import Foo
+from .bar import Bar
+    
+```
+
+---
+
+# Advantage?
+
+- Headache free imports for small modules 
+
+```python
+>>> import minions
+inside minions/__init__.py
+inside 'minions/foo.py' with a variable in it
+inside 'minions/bar.py'
+>>> a = minions.Foo()
+>>> b = minions.Bar()
+```
+
+- controlling import behaviour of `from foo import *` using the `__all__` variable inside `__init__.py`
+
+---
+
+# References
+
+- https://docs.python.org/3/tutorial/modules.html
+- https://docs.python.org/3/reference/import.html
+- https://docs.python.org/3/reference/executionmodel.html
+- https://docs.python.org/3/library/distribution.html
+
+---
+
+<center>
+
+<br><br>
+## Questions? Would be happy to answer
+
+<br><br>
+
+#### tasdikrahman.me
+
+###### Twitter ([tasdikrahman](https://twitter.com/))
+
+###### Github ([@prodicus](https://github.com/prodicus))

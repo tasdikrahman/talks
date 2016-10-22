@@ -3,7 +3,7 @@
 <center>
 <br><br>
 
-###### Material @ [https://github.com/prodicus/talks](https://github.com/prodicus/talks)
+###### Materials @ [https://github.com/prodicus/talks](https://github.com/prodicus/talks)
 <br>
 
 # Demystifying how imports work in Python
@@ -26,8 +26,7 @@
 # Requirements
 
 - Python 3.4 or newer.
-- Material @ https://github.com/prodicus/talks
-- No extra 3rd party extensions
+- No extra 3rd party extensions needed.
 - Coming over for this meetup!
 
 
@@ -218,7 +217,7 @@ import foo
 
 # Absolute relative imports
 
-- One way to fix it would be using the name of it's top level package name `rod`.
+- One way to fix it would be using the name of it's top level package name `relativeimports`.
 
 ```python
 # relativeimports/foo.py
@@ -227,7 +226,7 @@ from relativeimports import bar
 ```
 
 - This works, but is brittle!
-- What if you wanted to change the name of the top level?
+- What if you wanted to change the name of the top level package?
 - Errors!!!!
 
 ---
@@ -242,7 +241,7 @@ from . import foo
 ```
 
 - Works even when you rename the root level package for whatever the reason be 
-(eg: `explicitimportsv1` )
+(eg: you renamed it to `explicitimports_v1_0` )
 
 ```bash
 $ mv explicitimports/ newimports/
@@ -329,7 +328,8 @@ inside 'minions/bar.py'
 <center>
 
 <br><br>
-## Questions? Would be happy to answer
+## ==Questions==? 
+## Would be happy to answer them!
 
 <br><br>
 

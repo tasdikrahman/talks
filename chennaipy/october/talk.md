@@ -191,6 +191,21 @@ $ touch foo.py a_large_module_name.py
 
 ---
 
+<br><br>
+
+## I want to import them anyway!
+
+```python
+>>> from importlib import reload
+>>> reload(foo)
+```
+
+- This is generally not recommended!
+- If you do so, zombies will spawn
+- No really!
+
+---
+
 # Implicit Relative imports
 
 ```python
@@ -313,6 +328,14 @@ inside 'minions/bar.py'
 ```
 
 - controlling import behaviour of `from foo import *` using the `__all__` variable inside `__init__.py`
+
+---
+
+# Performance anybody?
+
+- Should I put the whole python package inside the `__init__.py`?
+- Yes. If it's small!
+- Not a good idea if you have a very large project! 
 
 ---
 

@@ -36,7 +36,7 @@
 
 - Any `python` source file would be counted as a module. 
 
-- You import a module to execute and access its classes/definitions/variables.
+- You import a module to execute and access its classes, function definitions, attributes.
 
 ```python
 >>> import os
@@ -44,7 +44,7 @@
 '/home/tasdik/Dropbox/talks/chennaipy/october/samplecode'
 >>> 
 ```
-- `posixpath` would be the module name where the method `abspath()` resides.
+- `posixpath` would be the module name where the method `abspath()` resides. `posixpath` being the alias name for `os.path` in linux systems.
 
 ---
 
@@ -66,7 +66,7 @@ inside 'basicpackage/bar'
 # Packages
 
 - Used to orgranize larger number of modules in a systematic manner.
-- One way of accessing individual modules can be accessed using the `import foo.bar` import style.
+- One way of accessing individual modules is using the `import foo.bar` import style.
 
 ```bash
 # typical package structuring
@@ -129,9 +129,9 @@ inside 'basicpackage_all/foo.py' with a variable in it
 inside 'basicpackage_all/bar.py'
 >>>
 ```
-- You can use `__all__` inside your `__init__.py` module to import the modules which you need to import.
+- You can use `__all__` inside your `__init__.py` module to import the modules which you need.
 
-- **Generally not a good idea!**
+- **Generally not a good idea!** Namespace collisions can occur.
 
 ---
 
@@ -193,7 +193,7 @@ $ touch foo.py a_large_module_name.py
 
 <br><br>
 
-## I want to import them anyway!
+## But I really want to import it again!
 
 ```python
 >>> from importlib import reload
@@ -201,7 +201,7 @@ $ touch foo.py a_large_module_name.py
 ```
 
 - This is generally not recommended!
-- If you do so, zombies will spawn
+- If you do so, zombies will spawn. 
 - No really!
 
 ---
@@ -222,7 +222,7 @@ $ rod/
 # inside "bar.py"
 import foo
 ```
-- Don't do it! Works in `python2`  but not in Doesn't work in `python3`
+- Don't do it! Works in `python2`  but doesn't work in `python3`
 
 ---
 
@@ -255,7 +255,7 @@ from relativeimports import bar
 from . import foo
 ```
 
-- Works even when you rename the root level package for whatever the reason be 
+- Works even when you rename the root level package for whatever the reason may be 
 (eg: you renamed it to `explicitimports_v1_0` )
 
 ```bash
@@ -356,8 +356,8 @@ inside 'minions/bar.py'
 
 <br><br>
 
-#### tasdikrahman.me
+#### http://tasdikrahman.me/
 
-###### Twitter ([tasdikrahman](https://twitter.com/))
+###### Twitter ([@tasdikrahman](https://twitter.com/))
 
 ###### Github ([@prodicus](https://github.com/prodicus))

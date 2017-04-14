@@ -1,0 +1,3 @@
+[submodule "bangpypers/intro-to-ansible-april-meetup/ansible-bootstrap-server"]
+	path = bangpypers/intro-to-ansible-april-meetup/ansible-bootstrap-server
+	url = git@github.com:prodicus/ansible-bootstrap-server.git

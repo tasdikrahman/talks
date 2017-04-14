@@ -1,0 +1,17 @@
+---
+- hosts: nginx
+  remote_user: root
+  vars:
+    message: "Welcome to the Aril Meetup!"
+  tasks:
+    - name: nginx | Install
+      apt: pkg=nginx state=installed update_cache=true
+    - name: nginx | remove default index.html
+      file: path=/var/www/html/index.nginx-debian.html state=absent
+    - name: nginx | copy template site
+      template: src=files/index.html.j2 dest=/var/www/html/index.nginx-debian.html
+      notify:
+        - restart nginx
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted

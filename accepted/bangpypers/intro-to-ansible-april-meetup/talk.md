@@ -33,7 +33,7 @@
 
 - A configuration management tool, deployment tool, and ad-hoc task execution tool all in one.
 - Initially developed by Michael DeHaan.
-- Inspired by Func (previously user by tumblr)
+- Inspired by Func (previously used by tumblr)
 - Userbase includes NASA, Apple, Juniper et al.
 
 ---
@@ -45,8 +45,12 @@
 
 ## Before Configuration management
 
-<br>
-<img src="images/43-manual-deployment-without-ansible.png" style="width: 100%" align="left"/>
+- manual configuration.
+- results in Flaky servers.
+
+
+<img src="images/43-manual-deployment-without-ansible.png" style="width: 950%" align="left"/>
+
 
 ---
 
@@ -64,8 +68,8 @@
 ---
 
 <center><h2>Using Ansible</h2>
-<br>
 
+Brings server to a known/deterministic state.
 <center><img src="images/43-ansible-deployment-workflow.png" style="width: 85%" align="center"/>
 
 
@@ -375,10 +379,12 @@ roles
 # ==Questions?== 
 #### Would be happy to answer them!
 
-<br><br>
+<br>
 
 #### http://tasdikrahman.me/
 
 ###### Twitter ([@tasdikrahman](https://twitter.com/))
 
 ###### Github ([@prodicus](https://github.com/prodicus))
+
+###### Materials for the talk @ [https://github.com/prodicus/talks](https://github.com/prodicus/talks)

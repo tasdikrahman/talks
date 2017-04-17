@@ -49,7 +49,7 @@
 - results in Flaky servers.
 
 
-<img src="images/43-manual-deployment-without-ansible.png" style="width: 950%" align="left"/>
+<img src="images/43-manual-deployment-without-ansible.jpg" style="width: 950%" align="left"/>
 
 
 ---
@@ -70,7 +70,7 @@
 <center><h2>Using Ansible</h2>
 
 Brings server to a known/deterministic state.
-<center><img src="images/43-ansible-deployment-workflow.png" style="width: 85%" align="center"/>
+<center><img src="images/43-ansible-deployment-workflow.jpg" style="width: 85%" align="center"/>
 
 
 ---
